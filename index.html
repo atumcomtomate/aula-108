@@ -1,0 +1,83 @@
+<html>
+
+  <head>
+    
+    <title>App Web Identificador de Sons</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+  </head>
+
+  <!-- 1. Crie body (corpo): Primeiro, precisamos adicionar uma tag div para posicionar a
+heading do app web. A heading deve conter um título e uma nota. -->
+
+  <body>
+    <!-- Defina uma tag div com uma class bootstrap, e nossa class como “heading_div”. -->
+    <div class="col-xs-12 header_div text-center">
+      <!-- Adicione uma tag h2 para conter o texto da heading. -->
+      <h2>Alienígenas controlados por som</h2>   
+      <!-- Adicione uma tag p dentro da tag div para conter a nota. Nessa nota, mencione quais
+áudios você utilizou em seu modelo. -->
+      <p>Observação: Reproduza diferentes sons, como: palmas, estalos e assobios/sinos, para fazer os alienígenas dançarem.</p>     
+    
+    </div>
+    
+
+    <!-- 2. Adicione buttons (botões), labels e images (imagens): Agora, precisamos adicionar outra
+    tag div para conter o button, as labels e todas as 4 imagens. -->
+    
+
+    <!-- Defina a tag div com uma class -->
+    <div class="main_div">
+      <!-- Adicione uma tag br, para que um espaço seja adicionado
+entre a heading e o próximo elemento que adicionaremos -->
+      <br>
+      <!-- adicione um button INICIAR que acessará o microfone de seu sistema e
+a classificação de sons. -->
+      <button class="btn btn-warning" onclick="startClassification();">INICIAR</button>
+      <!-- adicionar 2 headings. Um deve exibir qual áudio está sendo
+executado e outro deve mostrar a precisão do resultado recebido após a
+classificação do som -->
+      <h3 id="result_label">Posso ouvir: </h3>
+      <h4 id="result_confidence">Precisão: </h4>
+      <!-- adicione outra tag br para que um espaço seja adicionado entre a label
+e o próximo elemento (images) que adicionaremos. -->
+      <br>
+      <!-- adicionar as imagens dos quatro alienígenas. -->
+      <img src="aliens-01.png" id="alien1" width="300" height="300">
+      <img src="aliens-02.png" id="alien2" width="300" height="300">
+      <img src="aliens-03.png" id="alien3" width="300" height="300">
+      <img src="aliens-04.png" id="alien4" width="300" height="300">
+    
+    </div>
+
+<!-- 
+   3- Adicione uma nota de rodapé: Agora, podemos adicionar outra tag div para conter a footer. -->
+
+    <div class="copy_right_footer">
+      Desenvolvido por - Profª Arthur Bazan
+    </div>
+
+    <script src="main.js"></script>
+  
+  </body>
+  
+</html>
+
+
+
+
+
+
+
+
+ 
+
